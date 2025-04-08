@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stara Glow - Handmade Crochet Creations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .custom-shape {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-teal-600">Stara Glow</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-teal-600">Home</a>
+                    <a href="#shop" class="text-gray-600 hover:text-teal-600">Shop</a>
+                    <a href="#custom" class="text-gray-600 hover:text-teal-600">Custom Orders</a>
+                    <a href="#about" class="text-gray-600 hover:text-teal-600">About</a>
+                </div>
+                <div class="flex space-x-4 items-center">
+                    <button class="text-gray-600 hover:text-teal-600">
+                        <i class="bi bi-search text-xl"></i>
+                    </button>
+                    <button class="text-gray-600 hover:text-teal-600">
+                        <i class="bi bi-cart text-xl"></i>
+                    </button>
+                    <button class="md:hidden text-gray-600">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="custom-shape bg-teal-50 pb-16">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="hero-title text-4xl md:text-5xl font-bold text-gray-800 mb-6">Handcrafted Crochet with Love</h1>
+                    <p class="text-gray-600 mb-8">Discover our collection of beautifully handcrafted crochet items made with premium materials and attention to detail.</p>
+                    <a href="#shop" class="bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition">Shop Now</a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=800" alt="Crochet Items" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?w=500" alt="Crochet Blanket" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cozy Blanket</h3>
+                        <p class="text-gray-600 mb-4">Handmade with soft merino wool</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-teal-600 font-bold">$89.99</span>
+                            <button class="bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- More product cards -->
+                <!-- Similar structure repeated for other products -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Orders -->
+    <section id="custom" class="bg-teal-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Custom Orders</h2>
+                <p class="text-gray-600">Let us create something unique just for you</p>
+            </div>
+            <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2">What would you like us to make?</label>
+                    <textarea class="w-full p-3 border rounded-lg" rows="4"></textarea>
+                </div>
+                <button class="w-full bg-teal-600 text-white py-3 rounded-full hover:bg-teal-700">Request Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">About Stara Glow</h2>
+                    <p class="text-gray-600 mb-4">We are passionate about creating beautiful, handmade crochet items that bring warmth and comfort to your home. Each piece is crafted with care using premium materials.</p>
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#" class="text-teal-600 hover:text-teal-700">
+                            <i class="bi bi-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-teal-600 hover:text-teal-700">
+                            <i class="bi bi-pinterest text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-teal-600 hover:text-teal-700">
+                            <i class="bi bi-facebook text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1615834307375-6d9c81514ae2?w=600" alt="Workshop" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Stara Glow</h3>
+                    <p class="text-gray-400">Handmade crochet items crafted with love</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shop</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Custom Orders</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: hello@staraglow.com</li>
+                        <li>Phone: (555) 123-4567</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-full w-full">
+                        <button class="bg-teal-600 px-6 rounded-r-full hover:bg-teal-700">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Stara Glow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.bi-list').addEventListener('click', function() {
+            const mobileMenu = document.querySelector('.md\\:flex');
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('right-4');
+            mobileMenu.classList.toggle('bg-white');
+            mobileMenu.classList.toggle('p-4');
+            mobileMenu.classList.toggle('rounded-lg');
+            mobileMenu.classList.toggle('shadow-lg');
+        });
+
+        // Shopping cart functionality
+        const addToCartButtons = document.querySelectorAll('.product-card button');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Product added to cart!');
+            });
+        });
+
+        // Custom order form handling
+        const customOrderForm = document.querySelector('form');
+        customOrderForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your custom order request. We will get back to you soon!');
+            customOrderForm.reset();
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
